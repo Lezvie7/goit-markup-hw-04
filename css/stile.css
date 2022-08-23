@@ -1,0 +1,491 @@
+:root {
+  /* Fonts */
+  --main-font-family: 'Roboto', sans-serif;
+
+  /* Colors */
+  --main-color: #212121;
+  --main-light-color: #ffffff;
+  --current-color: #2196f3;
+  --secondary-color: #757575;
+  --footer-color: #2f303a;
+  --button-color: #f5f4fa;
+  --footer-info-color: rgba(255, 255, 255, 0.6);
+  --button-hero-bg-color: #188ce8;
+  --Hero-Shadow-button-color: rgba(0, 0, 0, 0.15);
+  --header-border: #ececec;
+  --Complementary-2-color: #000000;
+  --border-box-Gallery: #eeeeee;
+  --box-shadow-item-12: rgba(0, 0, 0, 0.12);
+  --box-shadow-item-14: rgba(0, 0, 0, 0.14);
+  --box-shadow-item-02: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  color: var(--main-color);
+  letter-spacing: 0.03em;
+  background-color: var(--main-light-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+address {
+  /* Убрать в футере курсив */
+  font-style: normal;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  /* border-radius: 4px; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Скрываем подчеркивание ссылок */
+
+a {
+  text-decoration: none;
+}
+
+/* Убираем маркеры */
+li {
+  list-style-type: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Глобальный border-box */
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.button-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.contacts-header {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.header-studio {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: var(--main-color);
+}
+
+.header-border {
+  border-bottom: 1px solid var(--header-border);
+}
+
+.header-web {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: var(--current-color);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+/* Скрываем h2 в index.html и h1 в portfolio.html */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Heder info  */
+
+.heder-info {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--secondary-color);
+  letter-spacing: 0.02em;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /* padding для кликабельности */
+}
+
+/* Hero-Section */
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3;
+  color: var(--main-light-color);
+  /* Текс большими буквами */
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.hero-section {
+  background: var(--footer-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.total {
+  padding-top: 0%;
+}
+
+.section-title-work {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.hero-button {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background-color: var(--current-color);
+  color: var(--main-light-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px var(--Hero-Shadow-button-color);
+  padding: 10px 32px;
+  border: none;
+}
+
+/* 2 варианта gap */
+
+/* .Our-features {
+  display: flex;
+  column-gap: 30px;
+  /* align-items: center; */
+
+.Our-features {
+  display: flex;
+  gap: 30px;
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--footer-color);
+  /* Делает все буквы большими */
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-paragraph {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--secondary-color);
+}
+
+.title-work {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  color: var(--main-color);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.img-tile {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.foto-paragraph {
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--secondary-color);
+}
+
+/* hover focus ссылок */
+
+.link:hover,
+.link:focus {
+  background-color: var(--current-color);
+  color: var(--current-color);
+
+  background-color: var(--main-light-color);
+}
+
+/* Ссылка хедера. */
+
+.list-header {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /* padding для кликабельности */
+}
+
+/* Header телефон и ссылка через селектор соседа  */
+.contacts-header .item + .item {
+  margin-left: 50px;
+}
+
+/* Дефолтные параметры кнопки */
+
+.button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  background-color: var(--main-light-color);
+}
+
+/* Hover Focus Hero button */
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--button-hero-bg-color);
+  box-shadow: 0px 4px 4px var(--Hero-Shadow-button-color);
+  border-radius: 4px;
+}
+
+/* hover focus button */
+
+.button:hover,
+.button:focus {
+  background-color: var(--current-color);
+  color: var(--main-light-color);
+}
+
+.button-section {
+  background: var(--button-color);
+  color: var(--main-color);
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  margin-bottom: 50px;
+}
+
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.Gallery-box {
+  padding: 20px 24px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-color: var(--border-box-Gallery);
+  border-right-color: var(--border-box-Gallery);
+  border-left-color: var(--border-box-Gallery);
+}
+
+/* .paragraph-border {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-box-Gallery);
+} */
+
+/* Текст кнопок */
+
+.button-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Делает цвет синий в статическом состоянии */
+
+.caren-studio,
+.caren-portfolio {
+  color: var(--current-color);
+}
+
+/* Параграф ссылки*/
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--secondary-color);
+}
+
+/*Portfolio Section */
+
+.portfolio-box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Заголовок ссылки */
+
+.list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--main-color);
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+/* Наша команда заливка секции в серый цвет */
+.section-team {
+  background-color: var(--button-color);
+}
+
+/* Наша команда заливка карточек в белый цвет */
+
+.cards-team-box {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.tim-item {
+  background: #ffffff;
+  /* material shadow v1 */
+
+  box-shadow: 0px 1px 3px var(--box-shadow-item-12), 0px 1px 1px var(--box-shadow-item-14),
+    0px 2px 1px var(--box-shadow-item-02);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.cards-team {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+/* Footer Web */
+
+.footer-web {
+  color: var(--current-color);
+  font-size: 26px;
+  line-height: 1.2;
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Footer Studio */
+
+.footer-studio {
+  color: var(--main-light-color);
+  font-size: 26px;
+  line-height: 1.2;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Фон футера */
+
+.footer {
+  background: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* info footer  */
+
+.footer-info {
+  color: var(--footer-info-color);
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+}
+
+.footer-item {
+  margin-bottom: 9px;
+}
+
+/* Ссылка address footer */
+
+.link-address {
+  color: var(--main-light-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Hover footer address  */
+
+.footer-info:hover,
+.footer-info:focus,
+.link-address:hover,
+.link-address:focus {
+  color: var(--current-color);
+}

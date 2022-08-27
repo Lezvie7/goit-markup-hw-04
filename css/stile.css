@@ -16,6 +16,8 @@
   --Complementary-2-color: #000000;
   --border-box-Gallery: #eeeeee;
   --hero-section: #c4c4c4;
+  --icon-social-network: #afb1b8;
+  --futer-social-network: rgba(255, 255, 255, 0.1);
   --box-shadow-item-12: rgba(0, 0, 0, 0.12);
   --box-shadow-item-14: rgba(0, 0, 0, 0.14);
   --box-shadow-item-02: rgba(0, 0, 0, 0.2);
@@ -200,7 +202,7 @@ li {
   text-align: center;
   background: var(--hero-section);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/goit-markup-hw-04/images/hero-section.jpg);
+    url(/img/hero-section.jpg);
 }
 
 .total {
@@ -261,7 +263,7 @@ li {
   top: 774px;
   margin-bottom: 30px;
 
-  background: #f5f4fa;
+  background: var(--button-color);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
@@ -299,6 +301,7 @@ li {
   font-size: 16px;
   line-height: 1.1;
   color: var(--secondary-color);
+  margin-bottom: 16px;
 }
 
 /* hover focus ссылок */
@@ -394,14 +397,16 @@ li {
   border-left-color: var(--border-box-Gallery);
 }
 
-/* .paragraph-border {
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--border-box-Gallery);
-} */
+/* Ховер и фокус карточек на Портфолио */
+
+.gallery-link:hover,
+.gallery-link:focus {
+  border-color: var(--current-color);
+}
 
 /* Текст кнопок */
 
-.button-text {
+.Gallery-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -452,13 +457,48 @@ li {
   text-align: center;
 }
 
+/* Тень карточек команды */
+
 .tim-item {
-  background: #ffffff;
-  /* material shadow v1 */
+  background: var(--main-light-color);
 
   box-shadow: 0px 1px 3px var(--box-shadow-item-12), 0px 1px 1px var(--box-shadow-item-14),
     0px 2px 1px var(--box-shadow-item-02);
   border-radius: 0px 0px 4px 4px;
+}
+
+/* Карточки команды */
+
+.icon-social-network {
+  height: 20px;
+  width: 20px;
+  fill: var(--icon-social-network);
+}
+
+.cards-social-network {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.link-social-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: var(--main-light-color);
+}
+
+.link-social-network:hover,
+.link-social-network:focus {
+  background-color: var(--current-color);
+}
+
+.link-social-network:hover .icon-social-network,
+.link-social-network:focus .icon-social-network {
+  fill: var(--main-light-color);
 }
 
 .cards-team {
@@ -467,6 +507,51 @@ li {
   flex-wrap: wrap;
   flex-basis: calc((100% - 90px) / 4);
 }
+/* Карточки команды */
+
+/* Постоянные клиенты */
+
+.section-company {
+  padding-top: 128px;
+  padding-bottom: 60px;
+}
+
+.box-section-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-social-network);
+  border-radius: 4px;
+  fill: currentColor;
+}
+
+.link-icom-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.icom-company {
+  width: 106px;
+  height: 60px;
+  /* color: var(--icon-social-network); */
+  fill: currentColor;
+}
+
+.box-section-company:hover,
+.box-section-company:focus {
+  color: var(--current-color);
+  border-color: var(--current-color);
+}
+
+.box-section-company {
+  color: var(--icon-social-network);
+}
+
+/* Постоянные клиенты */
 
 /* Footer Web */
 
@@ -515,6 +600,55 @@ li {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+}
+
+/* Список социальных сетей в footer */
+
+.title-footer {
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-light-color);
+  margin-bottom: 20px;
+}
+
+.footer-social-network {
+  display: flex;
+  column-gap: 10px;
+}
+
+.footer-address-box {
+  margin-right: 70px;
+}
+
+.footer-join-in {
+}
+
+.footer-container-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.futer-social-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: var(--futer-social-network);
+}
+
+.footer-icon-social {
+  height: 20px;
+  width: 20px;
+  fill: rgba(255, 255, 255, 1);
+}
+
+.futer-social-network:hover,
+.futer-social-network:focus {
+  background-color: var(--current-color);
 }
 
 /* Hover footer address  */

@@ -164,12 +164,13 @@ li {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
   /* padding для кликабельности */
 }
 
 .heder-info-icon {
-  height: 16px;
-  width: 16px;
+  /* height: 16px;
+  width: 10px; */
   margin-right: 10px;
   fill: currentColor;
 }

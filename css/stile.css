@@ -614,6 +614,7 @@ li {
   text-transform: uppercase;
   color: var(--main-light-color);
   margin-bottom: 20px;
+  display: block;
 }
 
 .footer-social-network {

@@ -206,7 +206,7 @@ li {
   text-align: center;
   background-repeat: no-repeat;
   max-width: 1600px;
-  max-height: 1600px;
+  height: 600px;
   background-size: cover;
   margin: 0 auto;
   background: var(--hero-section);
